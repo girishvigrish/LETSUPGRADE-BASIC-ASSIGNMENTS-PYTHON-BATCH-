@@ -1,0 +1,36 @@
+#LIST
+Method          Description
+append(x)	Adds an item (x) to the end of the list. 
+extend(iterable)Extends the list by appending all the items from the iterable. This allows you to join two lists together. 
+insert(i, x)	Inserts an item at a given position. The first argument is the index of the element before which to insert.
+remove(x)	Removes the first item from the list that has a value of x. Returns an error if there is no such item.
+pop([i])	Removes the item at the given position in the list, and returns it. If no index is specified, pop() removes and returns the last item in the list.
+clear()	        Removes all items from the list.
+count(x)	Returns the number of times x appears in the list.
+
+#DICTIONARY
+Method	    Description
+clear()	    Removes all the elements from the dictionary.
+copy()	    Returns a copy of the dictionary.
+fromkeys()  Returns a dictionary with the specified keys and value.
+get()	    Returns the value of the specified key.
+items()     Returns a list containing a tuple for each key value pair.
+keys()	    Returns a list containing the dictionary's keys.
+pop()	    Removes the element with the specified key.
+
+
+#SETS
+Method	Description
+add()	                Adds an element to the set.
+clear()	                Removes all the elements from the set.
+copy()	                Returns a copy of the set.
+difference()	        Returns a set containing the difference between two or more sets.
+difference_update()	Removes the items in this set that are also included in another, specified set.
+discard()	        Remove the specified item.
+intersection()  	Returns a set, that is the intersection of two other sets.
+
+
+#TUPLES
+Method	Description
+count()	Returns the number of times a specified value occurs in a tuple.
+index()	Searches the tuple for a specified value and returns the position of where it was found.

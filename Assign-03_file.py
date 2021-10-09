@@ -1,0 +1,6 @@
+f = open("C:\\Users\\aamul\\Desktop\\New folder\\test.txt", "w")
+f.write("i love FCS")
+f.close()
+f = open("C:\\Users\\aamul\\Desktop\\New folder\\test.txt", "r")
+print(f.readlines())
+f.close()

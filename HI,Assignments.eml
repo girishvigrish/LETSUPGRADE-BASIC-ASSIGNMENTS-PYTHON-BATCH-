@@ -1,0 +1,95 @@
+Delivered-To: girishstartup@gmail.com
+Received: by 2002:a7b:cd83:0:0:0:0:0 with SMTP id y3csp3707926wmj;
+        Sat, 9 Oct 2021 06:07:14 -0700 (PDT)
+X-Received: by 2002:a17:906:9b1:: with SMTP id q17mr11274129eje.546.1633784833935;
+        Sat, 09 Oct 2021 06:07:13 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1633784833; cv=none;
+        d=google.com; s=arc-20160816;
+        b=zeH9TeutlTf/OETA9seKjsDcZ1anR7+cfglSKb9B7hKxRDEj+lA4oJ31FtV9y25ovT
+         vTZhKSkZC9DBf+yO2nJ4TlaJO0h10w+dT7He1dvnG2bMwgUlOqpKWgr7rN120Oj8HhOl
+         bR+5qUN8j2R9EohGofRtFUska6u+9kABK6XX/nOlO0nxBpn8IZ4yJn39FN55Z0KWuAYu
+         0T7l5dmOKo72K+nbz1Q0TSqz5NPglogfHaqrik1u4S2EQw2/r449uBcUI2bXemwMnsW5
+         vdmgZ0VliJ60iWv1d6GbYl4Uv4MZAi4O7jfmgR1Q53w7DWTI+pS5uqhP+xxXctdWVdeo
+         1VVA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=WHsDEy1cqWLIFbWI2n7VvWuKJbJ+vSf6yxRQtZcAkzY=;
+        b=SjO3WSOipQiKzqkeLEY0nk0+pOgTctLW+RaZcF1pTxS+azXsF6EgJzich6f6Gc7j4o
+         rVKi4E7c9TctT2gkoICauX3MwHrxAed1wtRsj+jbFvaJYK+wEDH+t0ZuFx+IdLmIM/ec
+         W4qnKAzNLnDJ9VOtgbaBA9HsCCMZ20qYFVOX5Vo9ohB7M2ah+i1+4A8GKacme65HpX+t
+         vJ5Q3rwX6C4MIMRbJNyuFj2jmVvF6zm9ZjeIhRLbKIpvVN6/SMJB29B0m59pcqxOChG1
+         MbSuIdIAtALfMyk4KGifXg40/X/n9myc/bFKpFGdobsIsfusVFXuaofVhhfP3tcnKTJa
+         LGOA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=jizDWARU;
+       spf=pass (google.com: domain of girishvigrishdeemed@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=girishvigrishdeemed@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <girishvigrishdeemed@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 2sor2412591edx.26.2021.10.09.06.07.13
+        (Google Transport Security);
+        Sat, 09 Oct 2021 06:07:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of girishvigrishdeemed@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=jizDWARU;
+       spf=pass (google.com: domain of girishvigrishdeemed@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=girishvigrishdeemed@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=WHsDEy1cqWLIFbWI2n7VvWuKJbJ+vSf6yxRQtZcAkzY=;
+        b=jizDWARUBUrya+25pmcH3dzL1NYYgqLzW+r/nziVzZQDk+HOodMqSmF4iiyro1qmy4
+         VNpMQXUeOh2ybIggAqRD2LqXldxRtd7cCWR6k0ChSv9BNlD/xuur3/gx63YDY3jyvSgq
+         6QMLUHuzg+9vVtI4Rp8TPhWqSFTQ9TrEHZEkWkED5TAoKrvkMc0y1vAw6V8oHb5bz9M5
+         enZpZP7MOCXaivf6dmUJ4CJQWvQjA2KmkIXAP7501oPLsOVLjSmm47kG9QGYntv3Tl+w
+         VaX30LX8NzgZ5lbJe6ijyCaJB3kpxm7uf5UCZxPUxlVC2GQWxvpSZbtBc3Mr9vut0AFR
+         fKNQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=WHsDEy1cqWLIFbWI2n7VvWuKJbJ+vSf6yxRQtZcAkzY=;
+        b=fEi4vr1w9PlbsLeVNiFaeQeafNRO2GQt0oe1MFKFUGLkDb6QzSY5lHu2qebyANhKPR
+         +/EeZwmDAPQVMKajtG+rhlGKkCH25bq3fWdjuTRdOLreUn+Z/kB8Aukn7lnY1qh2mbeo
+         GwAA9JXGtADQfYcbi7GzxhJMIAu456GX6mDijDjLq1suvi3aKDxoSy5LoRlx+UkesVmC
+         hLzlgBIVc3A4fLUlMgIRW5goLWKzkXkAburojFNGYkPxELUv09c0Y026dUZA0oip5ry6
+         jZRUut9MHzPHyimqrLNvuLI1orDzaHsJ2/e7jlyeJFGERHy5Gafd0PiXVI8TeE5U8ZcM
+         0k3g==
+X-Gm-Message-State: AOAM5326+yvrrebwI3XRv13nFu1Yuk8fGYYaBrcki6cMlNqfrHjHj3xC
+	rgX6sgNwU7oMUKx2ihqoyiHl0ia7znL2KtY3oV2T9ibe
+X-Google-Smtp-Source: ABdhPJxgB/UUhu/vaB+5NQIAoQpMcuzxFIT6JzAW7HvQ2dwZ6Cx6LOUelQslYsEAnRiaNSFBr4f6C89bvTS5UjuXogA=
+X-Received: by 2002:a05:6402:34d1:: with SMTP id w17mr5698644edc.340.1633784833177;
+ Sat, 09 Oct 2021 06:07:13 -0700 (PDT)
+MIME-Version: 1.0
+References: <CABugykdBLRRuSsZ-xGeeTSKekUCs_P_2i7D3gtWBgOJyXkP9UQ@mail.gmail.com>
+In-Reply-To: <CABugykdBLRRuSsZ-xGeeTSKekUCs_P_2i7D3gtWBgOJyXkP9UQ@mail.gmail.com>
+From: Girish Vigrish <girishvigrishdeemed@gmail.com>
+Date: Sat, 9 Oct 2021 18:37:01 +0530
+Message-ID: <CAEj3x8j8n7LCFjGQauj7rhsOOMTjTRSWu7xnNtRgkU6cubDrSQ@mail.gmail.com>
+Subject: Re: HI,Assignments
+To: Amulya M <aamulya217@gmail.com>, girishstartup@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000009efcf805cdeb2c71"
+
+--0000000000009efcf805cdeb2c71
+Content-Type: text/plain; charset="UTF-8"
+
+Hello there
+
+On Fri, May 15, 2020, 14:18 Amulya M <aamulya217@gmail.com> wrote:
+
+>
+>
+
+--0000000000009efcf805cdeb2c71
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Hello there</div><br><div class=3D"gmail_quote"><div dir=
+=3D"ltr" class=3D"gmail_attr">On Fri, May 15, 2020, 14:18 Amulya M &lt;<a h=
+ref=3D"mailto:aamulya217@gmail.com">aamulya217@gmail.com</a>&gt; wrote:<br>=
+</div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-l=
+eft:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr"><br></div>
+</blockquote></div>
+
+--0000000000009efcf805cdeb2c71--
